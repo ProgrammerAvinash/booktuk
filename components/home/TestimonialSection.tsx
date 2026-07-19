@@ -3,7 +3,6 @@
 import { Star, Quote, Sparkles, CheckCircle2 } from "lucide-react";
 import {
   Card,
-  CardContent,
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
@@ -84,7 +83,7 @@ export function TestimonialsSection() {
 
                   {/* QUOTE TEXT */}
                   <p className="text-slate-700 font-medium text-sm sm:text-base leading-relaxed pt-1">
-                    "{item.quote}"
+                    &ldquo;{item.quote}&rdquo;
                   </p>
                 </CardHeader>
               </div>
@@ -105,8 +104,8 @@ export function TestimonialsSection() {
                         {item.author}
                       </h4>
                       <CheckCircle2
+                        aria-label="Verified local reader"
                         className="w-3.5 h-3.5 text-emerald-500 shrink-0"
-                        title="Verified Local Reader"
                       />
                     </div>
                     <p className="text-[11px] text-slate-500 line-clamp-1">
