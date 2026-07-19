@@ -1,11 +1,7 @@
 "use client";
 
 import { Star, Quote, Sparkles, CheckCircle2 } from "lucide-react";
-import {
-  Card,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardFooter, CardHeader } from "@/components/ui/card";
 
 export function TestimonialsSection() {
   const testimonials = [
@@ -126,10 +122,11 @@ export function TestimonialsSection() {
         {/* TRUST BANNER FOOTER */}
         <div className="mt-12 text-center">
           <p className="text-xs text-slate-500 flex items-center justify-center gap-1.5">
-            <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-            <span>
-              All reviews are from verified BookTuk community members.
-            </span>
+            <CheckCircle2
+              className="w-3.5 h-3.5 text-emerald-500 shrink-0"
+              aria-hidden="true"
+            />
+            <span className="sr-only">Verified Local Reader</span>
           </p>
         </div>
       </div>
